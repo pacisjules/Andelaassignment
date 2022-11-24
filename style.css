@@ -1,0 +1,864 @@
+body {
+    background: rgb(255, 238, 222);
+    background: radial-gradient(circle, #ffe4ca 0%, #e4fdfa 100%);
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#iconLogo{
+    width: 30px;
+    height: 30px;
+    border-radius: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -3px 4px 8px 0px #000000;
+    -webkit-box-shadow: -3px 4px 8px 0px #000000;
+    -moz-box-shadow: -3px 4px 8px 0px #000000;
+
+    color: #DE1AB3;
+    background-color: white;
+    margin-top: 5%;
+}
+
+
+
+
+.WelcomeBox {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+
+.WelcomeBox h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #DE1AB3;
+}
+
+.WelcomeBox h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #6A60BD;
+}
+
+.WelcomeBox input[type=text] {
+    background-color: #E7E4FF;
+    border-radius: 200px;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: #6A60BD;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    transition: 0.2s ease-out;
+
+}
+
+
+.WelcomeBox input[type=text]:focus {
+    background-color: #d5d0ff;
+    color: #3d367e;
+    box-shadow: -3px 4px 28px 0px #dab8e5;
+    -webkit-box-shadow: -3px 4px 28px 0px #dbb8e5;
+    -moz-box-shadow: -3px 4px 28px 0px #dcb8e5;
+}
+
+
+.WelcomeBox button {
+    background-color: #3d367e;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: #d5d0ff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    transition: 0.2s ease-out;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.WelcomeBox button:hover {
+    background-color: #c9c3ff;
+    color: #3d367e;
+    box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+}
+
+
+
+.appNow{
+    width: 75%;
+    margin-top: 10px;
+    display: none;
+}
+
+.appNow .TopSide{
+    background-color: #F0EBF8;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.appNow .TopSide .partTop{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconLogoSet{
+    width: 35px;
+    height: 35px;
+    border-radius: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -3px 4px 8px 0px #292929;
+    -webkit-box-shadow: -3px 4px 8px 0px #292929;
+    -moz-box-shadow: -3px 4px 8px 0px #292929;
+
+    color: #DE1AB3;
+    background-color: white;
+    font-size: 18px;
+}
+
+.appNow .TopSide .partDown{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.appNow .TopSide .partDown .leftSide{
+    width: 45%;
+    height: auto;
+    text-align: left;
+}
+
+.appNow .TopSide .partDown .leftSide h1{
+    font-weight: 500;
+    font-size: 24px;
+    color: #6C60E0;
+}
+
+.appNow .TopSide .partDown .leftSide h2{
+    font-weight:bold;
+    font-size: 21px;
+    color: #6C60E0;
+    margin-top: -10px;
+}
+
+.appNow .TopSide .partDown .RightSide{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.appNow .TopSide .partDown .RightSide .searchDiv{
+    background-color: #AF87F0;
+    width: 95%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+#sIcon{
+    color: white;
+    font-size: 30px;
+}
+
+.appNow .TopSide .partDown .RightSide .searchDiv input{
+    background-color: #AF87F0;
+    outline: none;
+    border: none;
+    color: #eae7ff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.appNow .BottomSide{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.appNow .BottomSide .LeftSide{
+ background-color: #EAEAFF;
+ width: 50%;
+ border-radius: 20px;
+ box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+padding: 10px;
+}
+
+.appNow .BottomSide .LeftSide h1{
+    color:#DE1AB3;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.appNow .BottomSide .LeftSide h2{
+    color: #6C60E0;
+    font-size: 15px;
+    font-weight: 400;
+}
+.appNow .BottomSide .LeftSide .BooksCont{
+    width: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books{
+    background-color: white;
+    width: 95%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books:hover{
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #a390d4;
+    -webkit-box-shadow: -3px 4px 28px 0px #8773bb;
+    -moz-box-shadow: -3px 4px 28px 0px #9984cc;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p1 .ifoto{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p1 .ifoto img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p2{
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p2 h2{
+    font-size: 18px;
+    font-weight: bold;
+    color:#2E2E2E;
+}
+
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p2 p{
+    color: #6C60E0;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p2 .cattc{
+    color: tomato;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3 button{
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    transition: 0.3s ease-out;
+
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3 .btn-view{
+background-color: #2F1061;
+width: 90%;
+border-radius: 0px 50px 0px 0px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3 .btn-view:hover{
+    background-color: #9e1cd2;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3 .btn-visit{
+    background-color: #FFB800;
+    width: 90%;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.appNow .BottomSide .LeftSide .BooksCont .Books .p3 .btn-visit:hover{
+    background-color: #ff5e00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appNow .BottomSide .RightSide{
+    background-color: white;
+    width: 46%;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -webkit-box-shadow: -3px 4px 28px 0px #C5B8E5;
+    -moz-box-shadow: -3px 4px 28px 0px #C5B8E5;
+}
+
+
+.appNow .BottomSide .RightSide .BookAdd{
+    width: 100%;
+    height: 50px;
+    background-color: #AF87F0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appNow .BottomSide .RightSide .BookAdd button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: #7649BF;
+    box-shadow: -3px 4px 8px 0px #3e3751;
+    -webkit-box-shadow: -3px 4px 8px 0px #3e3751;
+    -moz-box-shadow: -3px 4px 8px 0px #3e3751;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    margin-right: 10px;
+}
+
+.appNow .BottomSide .RightSide .BookAdd button:hover{
+    background-color: #e237dd;
+}
+
+#addIcon{
+    color: white;
+    font-size: 25px;
+    
+}
+
+.appNow .BottomSide .RightSide .BookAdd p{
+    font-weight: 500;
+    color: white;
+}
+
+
+
+.appNow .BottomSide .RightSide  h1{
+    color: #6C60E0;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.appNow .BottomSide .RightSide .MainDiv{
+width: 100%;
+height: auto;
+margin-top: -10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+
+.appNow .BottomSide .RightSide .MainDiv .catG{
+padding: 15px;
+width: 100px;
+height: 100px;
+background: #ffe997;
+border-radius: 10px;
+margin: 5px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column ;
+}
+
+.appNow .BottomSide .RightSide .MainDiv .catG:hover{
+    opacity: 0.8;
+}
+
+.appNow .BottomSide .RightSide .MainDiv .catG p{
+    color: #a28622;
+    font-weight: 600;
+}
+
+.appNow .BottomSide .RightSide .MainDiv .catG .images{
+    background-color: white;
+    padding: 15px;
+    border-radius: 200px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#catIco{
+    color: #dab738;
+    font-size: 32px;
+}
+
+
+.appNow .BottomSide .RightSide .Thes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.appNow .BottomSide .RightSide .Thes .item{
+    background-color: #ffe997;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 200px;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.appNow .BottomSide .RightSide .Thes .item:hover{
+    background-color: #f4c828;
+}
+
+.whole {
+    background-color: #ffffff92;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x:hidden ;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole .ViewBook{
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #b19ce6;
+    -webkit-box-shadow: -3px 4px 28px 0px #a694d3;
+    -moz-box-shadow: -3px 4px 28px 0px #8f7cbf;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whole .ViewBook .headerMan{
+    display: flex;
+}
+
+.whole .ViewBook .headerMan .ifoto{
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.whole .ViewBook .headerMan .ifoto img{
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+.whole .ViewBook .headerMan .infos{
+    margin-left: 10px;
+}
+.whole .ViewBook .headerMan .infos .ti{
+    color: #2E2E2E;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.whole .ViewBook .headerMan .infos .lin{
+    color: #6C60E0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.whole .ViewBook .headerMan .infos .cats{
+    color: #E95858;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.whole .ViewBook .mdCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.whole .ViewBook .mdCenter .descr{
+    color: #322887;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.whole .ViewBook .mdCenter .publ{
+color: #6C60E0;
+text-align: justify;
+}
+
+.whole .ViewBook .actions{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.whole .ViewBook .actions button{
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.whole .ViewBook .actions .btn-vst{
+    width: 150px;
+    background-color: #7649BF;
+}
+
+.whole .ViewBook .actions .btn-vst:hover{
+    background-color: #5323a1;
+}
+
+.whole .ViewBook .actions .btn-edt{
+    width: 150px;
+    background-color: #59BF49;
+}
+.whole .ViewBook .actions .btn-edt:hover{
+    background-color: #2e8321;
+}
+
+.whole .ViewBook .actions .btn-rmv{
+    width: 150px;
+    background-color: #BF4989;
+}
+
+.whole .ViewBook .actions .btn-rmv:hover{
+    background-color: #b90c6b;
+}
+
+.whole .ViewBook .forIcon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#closerV{
+    color: #BF4989;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+#closerV:hover{
+    color: #ff0051;
+}
+
+
+.whole .AddingForm {
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #b19ce6;
+    -webkit-box-shadow: -3px 4px 28px 0px #a694d3;
+    -moz-box-shadow: -3px 4px 28px 0px #8f7cbf;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whole .AddingForm input[type='text']{
+    background-color: #E7E4FF;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 5px;
+    
+}
+
+.whole .AddingForm input[type='text']:focus{
+    background-color: #b3ade2;
+    color: white;
+}
+
+.whole .AddingForm .descr{
+    background-color: #E7E4FF;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 5px;
+   
+}
+
+.whole .AddingForm .descr:focus{
+    background-color: #b3ade2;
+    color: white;
+}
+
+.whole .AddingForm select{
+    background-color: #E7E4FF;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    margin-top: 5px;
+    
+}
+
+.whole .AddingForm select:focus{
+    background-color: #b3ade2;
+    color: white;
+}
+
+
+.whole .AddingForm .acts{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.whole .AddingForm .acts button{
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.whole .AddingForm .acts .btn-update{
+    
+    width: 150px;
+    background-color: #7649BF;
+}
+
+.whole .AddingForm .acts .btn-update:hover{
+    background-color: #5323a1;
+}
+
+.whole .AddingForm .acts .btn-cancel{
+    margin-left: 10px;
+    width: 150px;
+    background-color: #e0217a;
+}
+.whole .AddingForm .acts .btn-cancel:hover{
+    background-color:  #9a0b4e;
+}
+
+.whole .AvatarForm {
+    width: 45%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 4px 28px 0px #b19ce6;
+    -webkit-box-shadow: -3px 4px 28px 0px #a694d3;
+    -moz-box-shadow: -3px 4px 28px 0px #8f7cbf;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.whole .AvatarForm button{
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    width: 150px;
+    background-color: #7649BF;
+}
+
+.whole .AvatarForm button:hover{
+    background-color: #5323a1;
+}
+
+.whole .AvatarForm .avts{
+    width: 100%;
+    height: auto;
+    background-color:#e1cfff ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.whole .AvatarForm .avts .ifomg{
+    width: 130px;
+    height: 130px;
+    border-radius: 200px;
+    margin: 10px;
+}
+
+.whole .AvatarForm .avts .ifomg img{
+    width: 130px;
+    height: 130px;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.whole .AvatarForm .avts .ifomg img:hover{
+    filter:brightness(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

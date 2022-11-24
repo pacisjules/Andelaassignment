@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>myBookmark App</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="iconLogo">
+        <h1>Mb</h1>
+    </div>
+
+    <div class="WelcomeBox" id="welcomeIDBox">
+        <h1>Welcome in myBookmark App</h1>
+        <!-- <h2>Enter your names</h2> -->
+        <input type="text" placeholder="Enter your names here Ex: Ishimwe Jules Pacis" id="wlcmId" />
+        <button onclick="welcomeFuc()">Go on !</button>
+        <p style="color: red;" id="msger"></p>
+    </div>
+
+    <div class="appNow" id="appNow">
+
+        <div class="TopSide">
+
+            <div class="partTop">
+                <div id="iconLogoSet">
+                    <h1>Mb</h1>
+                </div>
+            </div>
+
+            <div class="partDown">
+                <div class="leftSide">
+                    <h1 id="naming">Hi, Pacis</h1>
+                    <h2>Welcome in myBookmark App</h2>
+                </div>
+
+                <div class="RightSide">
+                    <div class="searchDiv">
+                        <iconify-icon icon="material-symbols:search-rounded" id="sIcon"></iconify-icon>
+                        <input type="text" placeholder="What Bookmark are you search for" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="BottomSide">
+            <div class="LeftSide">
+                <h1>BookMarks</h1>
+                <h2>All Categories</h2>
+
+
+                <div class="BooksCont" id="BooksCont">
+                    <!-- Here Implementing Bookmarks -->
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="RightSide">
+                <div class="BookAdd">
+                    <button>
+                        <iconify-icon icon="material-symbols:add" id="addIcon" onclick="OpenAddForm()"></iconify-icon>
+                    </button>
+                    <p>Add BookMark here</p>
+                </div>
+                <h1>Categories</h1>
+
+                <div class="MainDiv">
+
+                    <div class="catG" onclick="seemovies()">
+                        <div class="images">
+                            <iconify-icon icon="iconoir:cinema-old" id="catIco"></iconify-icon>
+                        </div>
+                        <p>Movies</p>
+                    </div>
+
+
+                    <div class="catG" style="background-color: #FFDFCD;" onclick="seecoding()">
+                        <div class="images">
+                            <iconify-icon icon="mdi:code-braces-box" id="catIco" style="color: #dd834f;"></iconify-icon>
+                        </div>
+                        <p style="color: #dd834f;">Coding</p>
+                    </div>
+
+
+
+                    <div class="catG" style="background-color: #FBE1FB;" onclick="seeVideo()">
+                        <div class="images">
+                            <iconify-icon icon="bi:youtube" id="catIco" style="color: #f375f3;"></iconify-icon>
+                        </div>
+                        <p style="color: #f375f3;">Video</p>
+                    </div>
+
+
+                    <div class="catG" style="background-color: #EBF2F8;" onclick="seeNews()">
+                        <div class="images">
+                            <iconify-icon icon="fluent:news-20-regular" id="catIco" style="color: #77b0e2;">
+                            </iconify-icon>
+                        </div>
+                        <p style="color: #77b0e2;">News</p>
+                    </div>
+
+                    <div class="catG" style="background-color: #FFCDCD;" onclick="seeSport()">
+                        <div class="images">
+                            <iconify-icon icon="fluent:sport-16-filled" id="catIco" style="color: #e46161;">
+                            </iconify-icon>
+                        </div>
+                        <p style="color: #e46161;">Sport</p>
+                    </div>
+
+
+
+
+                    <div class="catG" style="background-color: #EBF8EC;" onclick="seeIdeas()">
+                        <div class="images">
+                            <iconify-icon icon="academicons:ideas-repec" id="catIco" style="color: #77d87f;">
+                            </iconify-icon>
+                        </div>
+                        <p style="color: #77d87f;">New Ideas</p>
+                    </div>
+
+
+                </div>
+
+                <div class="Thes">
+
+                    <div class="item" style="width:100%;" onclick="seeAll()">
+                        <p style="font-weight: bold;">See all Bookmarks</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whole" id="Whole">
+        <div class="ViewBook" id="ViewBook">
+            <!-- Implement code -->
+        </div>
+
+        <!-- Adding form -->
+
+        <div class="AddingForm" id="AddingForm">
+            <div class="forIcon" style="text-align: right;">
+                <iconify-icon icon="mdi:close-circle" id="closerV" onclick="CloseAddForm()"></iconify-icon>
+            </div>
+            <h2>Add new BookMark</h2>
+            <p style="color:red;" id="msgErr"></p>
+            <input type="text" name="" id="TitleB" placeholder="Title">
+            <input type="text" name="" id="WebnameB" placeholder="Web name">
+            <input type="text" name="" id="linkB" placeholder="Url">
+
+            <select name="cars" id="categoriesDrop" placeholder="Category">
+                <option value="Movies">Movies</option>
+                <option value="Coding">Coding</option>
+                <option value="Video">Video</option>
+                <option value="New ideas">New Ideas</option>
+                <option value="News">News</option>
+                <option value="Sport">Sport</option>
+            </select>
+
+            <textarea name="Text1" id="descrB" cols="40" rows="5" class="descr"></textarea>
+            <br />
+            <div class="acts">
+                <button class="btn-update" onclick="OpenAvatar()">Add Bookmark</button>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+
+        </div>
+
+        <!-- Set Avatar to bookmark -->
+
+        <div class="AvatarForm" id="AvatarForm">
+            <h2 style="color:purple;">Choose bookmark avatar</h2>
+            <p style="color:orange; margin-Top:-20px" id="msgInfo">No Avatar Assigned</p>
+            <div class="avts" id="avts">
+                <!-- exporting code here -->
+            </div>
+
+            <button onclick="SelectAvatar_andSet()">Continue</button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+</html>
